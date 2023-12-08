@@ -5,7 +5,7 @@ namespace app {
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Day1.Challenge1().ToString());
+            Console.WriteLine(Day1.Challenge2().ToString());
         }
     }
 }
