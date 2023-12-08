@@ -90,7 +90,7 @@ static class Day1
                 continue;
             }
 
-            // Backwards
+            // Backwards - possibility of finding last number faster, worst case searches all indices
             for (int i = line.Length - 1; i >= firstPassFoundIndex; i--)
             {
                 if (char.IsDigit(line[i]))
