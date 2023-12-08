@@ -60,7 +60,7 @@ static class Day1
                     break;
                 }
 
-                string numeric = "";
+                string? numeric = "";
 
                 if (i + 3 < line.Length && alphaNums.TryGetValue(line.Substring(i, 3), out numeric))
                 {
@@ -99,7 +99,7 @@ static class Day1
                     break;
                 }
 
-                string numeric = "";
+                string? numeric;
 
                 if (i - 2 > 0 && alphaNums.TryGetValue(line.Substring(i - 2, 3), out numeric))
                 {
