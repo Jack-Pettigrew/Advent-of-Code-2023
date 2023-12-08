@@ -8,9 +8,9 @@ static class Day1
 
         int total = 0;
 
-        for (int i = 0; i < inputLines.Length; i++)
+        foreach (string line in inputLines)
         {
-            string[] split = Regex.Split(inputLines[i], @"\D+").Where(text => !string.IsNullOrEmpty(text)).ToArray();
+            string[] split = Regex.Split(line, @"\D+").Where(text => !string.IsNullOrEmpty(text)).ToArray();
 
             if(split.Length == 0)
             {
